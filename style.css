@@ -1,0 +1,128 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background: url("socially_img/back-image.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.nav{
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.logo{
+    width: 140px;
+}
+.navbar ul li{
+    display: inline-block;
+    list-style: none;
+    margin-left: 50px;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: black;
+    transition: .3s;
+    font-size: 18px;
+    
+}
+.navbar ul li a:hover{
+    color: rgb(241, 4, 123);
+}
+.login li{
+    list-style: none;
+
+}
+
+.login li a{
+    text-decoration: none;
+    color: black;
+    transition: .3s;
+    font-size: 18px;
+    font-weight: bolder;
+    
+}
+.login li a:hover{
+    color:rgb(228, 0, 76) ;
+}
+.login .download{
+    width: 150px;
+    height: 40px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 50px 0px 45px 0px;
+    background:linear-gradient(rgb(228, 0, 76),rgb(248, 12, 217));
+    transition: .4s;
+    cursor: pointer;
+}
+.login li,.download{
+    display: inline-block;
+    margin-left: 30px;
+}
+.login .download:hover{
+    border-radius: 45px 45px 45px 45px;
+    background:linear-gradient(rgb(0, 91, 228),rgb(181, 12, 248));
+    color: white;
+}
+    
+
+.content{
+    width: 40%;
+    margin-left: 100px;
+    margin-top: 100px;
+}
+.content h1{
+    font-size: 60px;
+    line-height: 90px;
+    animation-delay: 0.2;
+}
+.content .join{
+    margin-top: 30px;
+    width: 150px;
+    height: 40px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 50px 0px 45px 0px;
+    background:linear-gradient(rgb(228, 0, 76),rgb(248, 12, 217));
+    transition: .4s;
+    cursor: pointer;
+    animation-delay: 0.5s;
+}
+.content .join:hover{
+    border-radius: 45px 45px 45px 45px;
+    background:linear-gradient(rgb(0, 91, 228),rgb(181, 12, 248));
+    color: white;
+}
+.content p{
+    line-height: 25px;
+    animation-delay: 0.3s;
+}
+.image img{
+    width: 400px;
+    animation-delay: 0.7s;
+}
+.image{
+    position: absolute;
+    top:150px;
+    right: 100px;
+}
+.anim{
+    opacity: 0;
+    transform: translateY(60px);
+    animation: moveup 0.8s linear forwards;
+
+}
+@keyframes moveup{
+    100%{
+    opacity: 1;
+    transform: translateY(0px);
+    }
+}
